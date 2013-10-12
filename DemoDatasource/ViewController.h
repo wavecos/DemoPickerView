@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Personaje.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIPickerView *personajes;
 
 @end
